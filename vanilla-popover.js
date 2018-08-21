@@ -26,7 +26,7 @@
                   console.log("popoverEsquerda");
                   popoverContainer.classList.add('popoverEsquerda');
 
-                  let top=pos.top + 30 +'px';
+                  let top=pos.top + 15 +'px';
                   let left=pos.left + 'px';
                   popoverContainer.style.top = top;
                   popoverContainer.style.left = left;
@@ -38,7 +38,7 @@
                   console.log("popoverCentro");
                   popoverContainer.classList.add('popoverCentro');
 
-                  let top=pos.top + 30 +'px';
+                  let top=pos.top + 15 +'px';
                   let left=pos.left - 210 + 'px';
                   popoverContainer.style.top = top;
                   popoverContainer.style.left = left;
@@ -50,7 +50,7 @@
                   console.log("popoverDireita");
                   popoverContainer.classList.add('popoverDireita');
 
-                  let top=pos.top + 30 +'px';
+                  let top=pos.top + 15 +'px';
                   let left=pos.left - 450 + 'px';
                   popoverContainer.style.top = top;
                   popoverContainer.style.left = left;
@@ -61,11 +61,7 @@
                 console.log("popoverMobile");
                 popoverContainer.classList.add('popoverMobile');
 
-                let top=pos.top + 30 +'px';
-                //let left=pos.left - 450 + 'px';
-                popoverContainer.style.top = top;
-                popoverContainer.style.width='100%';
-                //popoverContainer.style.left = left;
+                let top=pos.top + 15 +'px';
                 popoverContainer.style.display='block';
               }
 

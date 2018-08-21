@@ -8,21 +8,31 @@
     z-index: 999;
     display: none;
     border: 1px solid;
-    .vanilla-popover-ico {
-        cursor: pointer;
-    }
     &.popoverEsquerda {
         background-color: red;
+        margin-left: 15px;
     }
     &.popoverDireita {
         background-color: green;
+        margin-right: 15px;
     }
     &.popoverCentro {
         background-color: yellow;
+        margin: 0;
     }
     &.popoverMobile {
         background-color: blue;
         margin: 15px;
+        left: 0;
         width: calc(100% - 30px) ;
     }
+}
+.vanilla-popover-ico {
+    cursor: pointer;
+    background: #999;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
 }
