@@ -1,0 +1,24 @@
+{
+  "name": "vanilla-popover",
+  "version": "1.0.0",
+  "description": "",
+  "main": "popover.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizvilarinho/vanilla-popover.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizvilarinho/vanilla-popover/issues"
+  },
+  "homepage": "https://github.com/luizvilarinho/vanilla-popover#readme"
+}
