@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="dist/jquery-1.9.1.min.js" type="text/javascript"></script>
+  <style>
+    .center{
+      text-align: center;
+    }
+    .popover{
+      width:auto;
+      height: auto;
+      padding: 15px;
+      box-sizing:border-box;
+      max-width:400px;
+      position:absolute;
+      z-index:999;
+      display:none;
+      margin-right:30px;
+      margin-left: 30px;
+      border:1px solid;
+    }
+
+    #pop{
+      cursor:pointer;
+    }
+    .ps-container{
+      display: flex;
+    }
+
+    .popoverEsquerda{
+      background-color: red;
+    }
+    .popoverDireita{
+      background-color: green;
+    }
+    .popoverCentro{
+      background-color: yellow;
+    }
+    .popoverMobile{
+      background-color: blue;
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="ps-container" style="text-align:center">
+    <h3 class="" style="margin-left:"><span id="pop" class="ps-ico ps-ico-doubt ps-popover-ico">X</span></h3>
+    <div class="popover" data-popover="pop">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias dolores sequi corrupti cupiditate perferendis, porro placeat saepe suscipit doloremque necessitatibus!
+    </div>
+  </div>
+
+<!-- <script src="https://www.portoseguro.com.br/visual/v.1/js/min/ps-lib.full-min.js"></script> -->
+<script src="popover.js"></script>
+  <script>
+//   function popover(){
+//     function getPopover(){
+//       return $(".popover").parent(".ps-ico-doubt").attr('id');
+//     }
+//     $('.pop').each(function(){
+//         $(this).mouseover(function(){
+//             let pos=this.getBoundingClientRect();
+//             let tela=$(window).width();
+//             console.log(pos);
+//             let largura=parseFloat($("div[data-popover='" + $(this).attr('id') + "']").css('width'));
+//
+//             if(pos.left > tela/3 && pos.left < (tela/3)*2 || tela < 467){
+//               let top=pos.top + 30 +'px';
+//               let left=pos.left - (largura/2) + 'px';
+//
+//               $("div[data-popover='" + $(this).attr('id') + "']").css({
+//                 'top': top ,
+//                 'left':left ,
+//               });
+//
+//               $("div[data-popover='" + $(this).attr('id') + "']").show(300);
+//               $(this).mouseout(function(){
+//                 $("div[data-popover='" + $(this).attr('id') + "']").hide(300);
+//               })
+//               return false;
+//             }
+//
+//             if(pos.left < tela/3){
+//               console.log("passou");
+//               let top=pos.top +'px';
+//               let left=pos.left + 30 + 'px';
+//               $("div[data-popover='" + $(this).attr('id') + "']").css({
+//                 'top': top ,
+//                 'left':left ,
+//                 'float':'left',
+//               });
+//               $("div[data-popover='" + $(this).attr('id') + "']").show(300);
+//             }
+//
+//             if(pos.left > (tela/3)*2){
+//               let top=pos.top +'px';
+//               let left=pos.left - largura - 30 + 'px';
+//               $("div[data-popover='" + $(this).attr('id') + "']").css({
+//                 'top': top ,
+//                 'left':left ,
+//                 'float':'right',
+//               });
+//               $("div[data-popover='" + $(this).attr('id') + "']").show(300);
+//             }
+//
+//         })
+//         $(this).mouseout(function(){
+//           $("div[data-popover='" + $(this).attr('id') + "']").hide(300);
+//         })
+//     })
+//
+//   }
+// popover();
+
+
+  </script>
+</body>
+</html>
