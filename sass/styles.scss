@@ -1,3 +1,28 @@
 .vanilla-popover {
-    background: white;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    max-width: 400px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border: 1px solid;
+    .vanilla-popover-ico {
+        cursor: pointer;
+    }
+    &.popoverEsquerda {
+        background-color: red;
+    }
+    &.popoverDireita {
+        background-color: green;
+    }
+    &.popoverCentro {
+        background-color: yellow;
+    }
+    &.popoverMobile {
+        background-color: blue;
+        margin: 15px;
+        width: calc(100% - 30px) ;
+    }
 }

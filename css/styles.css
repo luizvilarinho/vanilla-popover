@@ -1,1 +1,1 @@
-.vanilla-popover{background:white}
+.vanilla-popover{width:auto;height:auto;padding:15px;box-sizing:border-box;max-width:400px;position:absolute;z-index:999;display:none;border:1px solid}.vanilla-popover .vanilla-popover-ico{cursor:pointer}.vanilla-popover.popoverEsquerda{background-color:red}.vanilla-popover.popoverDireita{background-color:green}.vanilla-popover.popoverCentro{background-color:yellow}.vanilla-popover.popoverMobile{background-color:blue;margin:15px;width:calc(100% - 30px)}

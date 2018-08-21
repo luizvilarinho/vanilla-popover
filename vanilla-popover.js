@@ -1,7 +1,7 @@
  window.onload=function(){
     let popoverObject={};
     popoverObject.verifyPopover=function(){
-      popoverObject.element=document.querySelectorAll(".ps-popover-ico");
+      popoverObject.element=document.querySelectorAll(".vanilla-popover-ico");
         if(popoverObject.element != undefined){
           return popoverObject;
         }
