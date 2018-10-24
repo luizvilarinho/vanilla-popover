@@ -1,38 +1,76 @@
 .vanilla-popover {
-    width: auto;
-    height: auto;
-    padding: 15px;
+    padding: 15px 18px;
+    margin: 7px;
     box-sizing: border-box;
-    max-width: 400px;
-    position: absolute;
-    z-index: 999;
+    max-width: 350px;
+    position: fixed;
+    z-index: 99;
     display: none;
-    border: 1px solid;
-    &.popoverEsquerda {
-        background-color: red;
-        margin-left: 15px;
-    }
-    &.popoverDireita {
-        background-color: green;
-        margin-right: 15px;
-    }
-    &.popoverCentro {
-        background-color: yellow;
-        margin: 0;
-    }
-    &.popoverMobile {
-        background-color: blue;
-        margin: 15px;
+    background: white;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1), 0 2px 12px rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.1), 0 2px 12px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,.1), 0 2px 12px rgba(0,0,0,.2);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    font: 300 13px/1.4em 'Open Sans', Sans-serif;
+    color: #1C1C1C;
+
+    @media all and (max-width: 991px) {
+        margin: 10px;
         left: 0;
-        width: calc(100% - 30px) ;
+        width: calc(100% - 20px);
     }
 }
+
 .vanilla-popover-ico {
     cursor: pointer;
-    background: #999;
-    color: #fff;
-    width: 15px;
-    height: 15px;
     display: inline-block;
-    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+body>div {
+    position: fixed;
+    z-index: 0;
+
+    &#pop0 {
+        top: 0;
+        left: 0;
+    }
+
+    &#pop1 {
+        top: 0;
+        left: 50%;
+    }
+
+    &#pop2 {
+        top: 0;
+        right: 0;
+    }
+
+    &#pop3 {
+        top: 50%;
+        right: 0;
+    }
+
+    &#pop4 {
+        bottom: 0;
+        right: 0;
+    }
+
+    &#pop5 {
+        bottom: 0;
+        right: 50%;
+    }
+
+    &#pop6 {
+        bottom: 0;
+        left: 0;
+    }
+
+    &#pop7 {
+        bottom: 50%;
+        left: 0;
+    }
 }
