@@ -20,6 +20,7 @@
         margin: 15px;
         left: 0;
         width: calc(100% - 30px);
+        max-width: 300px;
         &:before {
             content: 'x';
             position: absolute;
