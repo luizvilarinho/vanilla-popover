@@ -33,7 +33,9 @@
              if (posLeft) {
                console.log("popoverEsquerda");
 
-               popoverContainer.style.display = 'block';
+               //popoverContainer.style.display = 'block';
+               $(popoverContainer).fadeIn();
+
                let popoverContHeight = popoverContainer.offsetHeight + 9; // 25px distancia - 16px do icone
 
                let top = pos.top - popoverContHeight + 'px';
@@ -46,7 +48,9 @@
              if (posCenterW) {
                console.log("popoverCentro");
 
-               popoverContainer.style.display = 'block';
+               //popoverContainer.style.display = 'block';
+               $(popoverContainer).fadeIn();
+
                let popoverContWidth = popoverContainer.offsetWidth / 2 - 8; // valor 8 se refere a metade do tamanho do icone
                let popoverContHeight = popoverContainer.offsetHeight + 9; // 25px distancia - 16px do icone
 
@@ -60,7 +64,9 @@
              if (posRight) {
                console.log("popoverDireita");
 
-               popoverContainer.style.display = 'block';
+               //popoverContainer.style.display = 'block';
+               $(popoverContainer).fadeIn();
+
                let popoverContWidth = popoverContainer.offsetWidth + 9; // 25px distancia - 16px do icone
                let popoverContHeight = popoverContainer.offsetHeight + 9; // 25px distancia - 16px do icone
 
@@ -74,7 +80,8 @@
            } else {
              console.log("popoverMobile");
 
-             popoverContainer.style.display = 'block';
+             //popoverContainer.style.display = 'block';
+             $(popoverContainer).fadeIn();
 
              let popoverContHeight = popoverContainer.offsetHeight + 15; // 25px distancia - 16px do icone
              let top = pos.top - popoverContHeight + 'px';
@@ -86,7 +93,8 @@
              if (posLeft) {
                console.log("popoverEsquerda");
 
-               popoverContainer.style.display = 'block';
+               //popoverContainer.style.display = 'block';
+               $(popoverContainer).fadeIn();
 
                let top = pos.top + 25 + 'px';
                let left = pos.left + 25 + 'px';
@@ -98,7 +106,9 @@
              if (posCenterW) {
                console.log("popoverCentro");
 
-               popoverContainer.style.display = 'block';
+               //popoverContainer.style.display = 'block';
+               $(popoverContainer).fadeIn();
+
                let popoverContWidth = popoverContainer.offsetWidth / 2 - 8; // valor 8 se refere a metade do tamanho do icone
 
                let top = pos.top + 25 + 'px';
@@ -111,7 +121,9 @@
              if (posRight) {
                console.log("popoverDireita");
 
-               popoverContainer.style.display = 'block';
+               //popoverContainer.style.display = 'block';
+               $(popoverContainer).fadeIn();
+               
                let popoverContWidth = popoverContainer.offsetWidth + 9; // 25px distancia - 16px do icone
                console.log(popoverContWidth);
 
@@ -125,7 +137,8 @@
            } else {
              console.log("popoverMobile");
 
-             popoverContainer.style.display = 'block';
+             //popoverContainer.style.display = 'block';
+             $(popoverContainer).fadeIn();
 
              let top = pos.top + 15 + 'px';
              popoverContainer.style.top = top;
