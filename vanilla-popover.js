@@ -61,7 +61,7 @@
                console.log("popoverDireita");
 
                popoverContainer.style.display = 'block';
-               let popoverContWidth = popoverContainer.offsetWidth;
+               let popoverContWidth = popoverContainer.offsetWidth + 9; // 25px distancia - 16px do icone
                let popoverContHeight = popoverContainer.offsetHeight + 9; // 25px distancia - 16px do icone
 
                let top = pos.top - popoverContHeight + 'px';
@@ -112,7 +112,7 @@
                console.log("popoverDireita");
 
                popoverContainer.style.display = 'block';
-               let popoverContWidth = popoverContainer.offsetWidth;
+               let popoverContWidth = popoverContainer.offsetWidth + 9; // 25px distancia - 16px do icone
                console.log(popoverContWidth);
 
                let top = pos.top + 25 + 'px';
