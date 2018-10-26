@@ -87,7 +87,7 @@ window.onload = function () {
             //popoverContainer.style.display = 'block';
             $(popoverContainer).fadeIn();
 
-            let popoverContHeight = popoverContainer.offsetHeight + 20; // 25px distancia - 16px do icone
+            let popoverContHeight = popoverContainer.offsetHeight + 9;
             let top = pos.top - popoverContHeight + 'px';
             popoverContainer.style.top = top;
 
@@ -144,7 +144,7 @@ window.onload = function () {
             //popoverContainer.style.display = 'block';
             $(popoverContainer).fadeIn();
 
-            let top = pos.top + 15 + 'px';
+            let top = pos.top + 25 + 'px';
             popoverContainer.style.top = top;
 
           }
