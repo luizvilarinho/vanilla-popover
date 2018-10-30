@@ -1,4 +1,4 @@
-window.onload = function () {
+function popoverVanilla() {
 
   let popoverObject = {};
 
@@ -35,6 +35,7 @@ window.onload = function () {
         if (posBottom) {
           if (telaW > 768) {
             if (posLeft) {
+              popoverContainer.classList.add("popoverEsquerda");
               console.log("popoverEsquerda");
 
               //popoverContainer.style.display = 'block';
@@ -50,6 +51,7 @@ window.onload = function () {
             };
 
             if (posCenterW) {
+              popoverContainer.classList.add("popoverCentro");
               console.log("popoverCentro");
 
               //popoverContainer.style.display = 'block';
@@ -66,6 +68,7 @@ window.onload = function () {
             }
 
             if (posRight) {
+              popoverContainer.classList.add("popoverDireita");
               console.log("popoverDireita");
 
               //popoverContainer.style.display = 'block';
@@ -82,6 +85,7 @@ window.onload = function () {
             }
 
           } else {
+            popoverContainer.classList.add("popoverMobile");
             console.log("popoverMobile");
 
             //popoverContainer.style.display = 'block';
@@ -95,6 +99,7 @@ window.onload = function () {
         } else {
           if (telaW > 768) {
             if (posLeft) {
+              popoverContainer.classList.add("popoverEsquerda");
               console.log("popoverEsquerda");
 
               //popoverContainer.style.display = 'block';
@@ -108,6 +113,7 @@ window.onload = function () {
             };
 
             if (posCenterW) {
+              popoverContainer.classList.add("popoverCentro");
               console.log("popoverCentro");
 
               //popoverContainer.style.display = 'block';
@@ -123,6 +129,7 @@ window.onload = function () {
             }
 
             if (posRight) {
+              popoverContainer.classList.add("popoverDireita");
               console.log("popoverDireita");
 
               //popoverContainer.style.display = 'block';
@@ -139,6 +146,7 @@ window.onload = function () {
             }
 
           } else {
+            popoverContainer.classList.add("popoverMobile");
             console.log("popoverMobile");
 
             //popoverContainer.style.display = 'block';
@@ -172,4 +180,8 @@ window.onload = function () {
 
   popoverObject.verifyPopover().setPosition().hide();
 
+}
+
+window.onload = function () {
+  popoverVanilla();
 }
