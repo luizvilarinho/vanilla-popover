@@ -24,12 +24,6 @@ function popoverVanilla() {
         let posRight = pos.left > (telaW / 3) * 2;
         let posBottom = pos.top > (telaH / 3) * 2;
 
-        console.log(pos);
-        console.log(telaW);
-        console.log("telaH", telaH);
-        console.log(pos.left);
-        console.log(pos.top);
-
         let popoverContainer = document.querySelector("div[data-popover=" + popoverId + "]");
 
         if ($(popoverContainer).is(":visible")) {
@@ -41,9 +35,8 @@ function popoverVanilla() {
           if (telaW > 768) {
             if (posLeft) {
               popoverContainer.classList.add("popoverEsquerda");
-              console.log("popoverEsquerda");
+              console.log("popoverEsquerda Base");
 
-              //popoverContainer.style.display = 'block';
               $(popoverContainer).fadeIn();
 
               let popoverContHeight = popoverContainer.offsetHeight;
@@ -57,26 +50,25 @@ function popoverVanilla() {
 
             if (posCenterW) {
               popoverContainer.classList.add("popoverCentro");
-              console.log("popoverCentro");
+              console.log("popoverCentro Base");
 
-              //popoverContainer.style.display = 'block';
               $(popoverContainer).fadeIn();
 
               let popoverContWidth = popoverContainer.offsetWidth / 2 - 8; // valor 8 se refere a metade do tamanho do icone
-              let popoverContHeight = popoverContainer.offsetHeight + 20;
+              let popoverContHeight = popoverContainer.offsetHeight + 25;
 
               let top = pos.top - popoverContHeight + 'px';
               let left = pos.left - popoverContWidth + 'px';
               popoverContainer.style.top = top;
               popoverContainer.style.left = left;
+              console.log(top);
 
             }
 
             if (posRight) {
               popoverContainer.classList.add("popoverDireita");
-              console.log("popoverDireita");
+              console.log("popoverDireita Base");
 
-              //popoverContainer.style.display = 'block';
               $(popoverContainer).fadeIn();
 
               let popoverContWidth = popoverContainer.offsetWidth + 19; // 25px distancia - 16px do icone
@@ -93,7 +85,6 @@ function popoverVanilla() {
             popoverContainer.classList.add("popoverMobile");
             console.log("popoverMobile");
 
-            //popoverContainer.style.display = 'block';
             $(popoverContainer).fadeIn();
 
             let popoverContHeight = popoverContainer.offsetHeight + 9;
@@ -102,12 +93,12 @@ function popoverVanilla() {
 
           }
         } else {
+          popoverContainer.classList.remove("popoverBottom");
           if (telaW > 768) {
             if (posLeft) {
               popoverContainer.classList.add("popoverEsquerda");
               console.log("popoverEsquerda");
 
-              //popoverContainer.style.display = 'block';
               $(popoverContainer).fadeIn();
 
               let top = pos.top + 10 + 'px';
@@ -121,15 +112,15 @@ function popoverVanilla() {
               popoverContainer.classList.add("popoverCentro");
               console.log("popoverCentro");
 
-              //popoverContainer.style.display = 'block';
               $(popoverContainer).fadeIn();
 
               let popoverContWidth = popoverContainer.offsetWidth / 2 - 8; // valor 8 se refere a metade do tamanho do icone
 
-              let top = pos.top + 35 + 'px';
+              let top = pos.top + 40 + 'px';
               let left = pos.left - popoverContWidth + 'px';
               popoverContainer.style.top = top;
               popoverContainer.style.left = left;
+              console.log(top);
 
             }
 
@@ -137,7 +128,6 @@ function popoverVanilla() {
               popoverContainer.classList.add("popoverDireita");
               console.log("popoverDireita");
 
-              //popoverContainer.style.display = 'block';
               $(popoverContainer).fadeIn();
 
               let popoverContWidth = popoverContainer.offsetWidth + 19; // 25px distancia - 16px do icone
@@ -154,7 +144,6 @@ function popoverVanilla() {
             popoverContainer.classList.add("popoverMobile");
             console.log("popoverMobile");
 
-            //popoverContainer.style.display = 'block';
             $(popoverContainer).fadeIn();
 
             let top = pos.top + 25 + 'px';
