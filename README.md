@@ -1,4 +1,4 @@
-JAVASCRIPT VANILLA POPOVER
+# JAVASCRIPT VANILLA POPOVER
 
 The idea is to do an alternate version of Bootstrap Popover with a minimum vanilla Javascript code and CSS.
 
