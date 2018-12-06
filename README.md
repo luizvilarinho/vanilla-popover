@@ -2,16 +2,8 @@
 
 The idea is to do an alternate version of Bootstrap Popover with a minimum vanilla Javascript code and CSS.
 
-The project was started by Luiz Vilarinho [1] and Alex Novelli [2].
+The project was started by [Luiz Vilarinho](https://github.com/luizvilarinho) and [Alex Novelli](https://github.com/alexnovelli).
 
-Thanks to Alireza Sarabchi [3] for FadeIn & fadeOut Vanilla function.
+Thanks to [Alireza Sarabchi](https://github.com/alirezas) for [FadeIn & fadeOut Vanilla](https://gist.github.com/alirezas/c4f9f43e9fe1abba9a4824dd6fc60a55) script.
 
-Thanks to Freepik for the Doubt Icon [4]
-
-1] https://github.com/luizvilarinho
-
-2] https://github.com/alexnovelli
-
-3] https://github.com/alirezas
-
-4] Icon made by Freepik from www.flaticon.com
+Doubt icon made by [Freepik](https://www.flaticon.com)
