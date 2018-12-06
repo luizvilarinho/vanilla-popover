@@ -26,17 +26,13 @@ function popoverVanilla() {
 
         let popoverContainer = document.querySelector("div[data-popover=" + popoverId + "]");
 
-        if ($(popoverContainer).is(":visible")) {
-          return false;
-        }
-
         if (posBottom) {
           popoverContainer.classList.add("popoverBottom");
           if (telaW > 768) {
             if (posLeft) {
               popoverContainer.classList.add("popoverEsquerda");
 
-              $(popoverContainer).fadeIn();
+              fadeIn(popoverContainer);
 
               let popoverContHeight = popoverContainer.offsetHeight;
 
@@ -50,7 +46,7 @@ function popoverVanilla() {
             if (posCenterW) {
               popoverContainer.classList.add("popoverCentro");
 
-              $(popoverContainer).fadeIn();
+              fadeIn(popoverContainer);
 
               let popoverContWidth = popoverContainer.offsetWidth / 2 - 8; // valor 8 se refere a metade do tamanho do icone
               let popoverContHeight = popoverContainer.offsetHeight + 25;
@@ -65,7 +61,7 @@ function popoverVanilla() {
             if (posRight) {
               popoverContainer.classList.add("popoverDireita");
 
-              $(popoverContainer).fadeIn();
+              fadeIn(popoverContainer);
 
               let popoverContWidth = popoverContainer.offsetWidth + 19; // 25px distancia - 16px do icone
               let popoverContHeight = popoverContainer.offsetHeight;
@@ -80,7 +76,7 @@ function popoverVanilla() {
           } else {
             popoverContainer.classList.add("popoverMobile");
 
-            $(popoverContainer).fadeIn();
+            fadeIn(popoverContainer);
 
             let popoverContHeight = popoverContainer.offsetHeight + 9;
             let top = pos.top - popoverContHeight + 'px';
@@ -93,7 +89,7 @@ function popoverVanilla() {
             if (posLeft) {
               popoverContainer.classList.add("popoverEsquerda");
 
-              $(popoverContainer).fadeIn();
+              fadeIn(popoverContainer);
 
               let top = pos.top + 10 + 'px';
               let left = pos.left + 35 + 'px';
@@ -105,7 +101,7 @@ function popoverVanilla() {
             if (posCenterW) {
               popoverContainer.classList.add("popoverCentro");
 
-              $(popoverContainer).fadeIn();
+              fadeIn(popoverContainer);
 
               let popoverContWidth = popoverContainer.offsetWidth / 2 - 8; // valor 8 se refere a metade do tamanho do icone
 
@@ -119,7 +115,7 @@ function popoverVanilla() {
             if (posRight) {
               popoverContainer.classList.add("popoverDireita");
 
-              $(popoverContainer).fadeIn();
+              fadeIn(popoverContainer);
 
               let popoverContWidth = popoverContainer.offsetWidth + 19; // 25px distancia - 16px do icone
 
@@ -133,7 +129,7 @@ function popoverVanilla() {
           } else {
             popoverContainer.classList.add("popoverMobile");
 
-            $(popoverContainer).fadeIn();
+            fadeIn(popoverContainer);
 
             let top = pos.top + 25 + 'px';
             popoverContainer.style.top = top;
@@ -153,10 +149,10 @@ function popoverVanilla() {
       let popoverId = popover.getAttribute("id");
       let popoverContainer = document.querySelector("div[data-popover=" + popoverId + "]");
       popoverObject.element[i].addEventListener('mouseout', function () {
-        $(popoverContainer).fadeOut("fast");
+        fadeOut(popoverContainer);
       });
-      $(popoverContainer).click(function () {
-        $(popoverContainer).fadeOut("fast");
+      popoverContainer.addEventListener('click', function () {
+        fadeOut(popoverContainer);
       });
     }
   }

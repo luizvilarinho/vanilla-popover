@@ -136,9 +136,15 @@
 .vanilla-popover-ico {
     cursor: pointer;
     display: inline-block;
+    width: 21px;
+    vertical-align: middle;
 }
 
 // DEMO ONLY
+
+h3 {
+    font: 300 21px "Open Sans", sans-serif;
+}
 
 body>div {
     position: fixed;
@@ -156,22 +162,22 @@ body>div {
 
     &#pop2 {
         top: 0;
-        right: 0;
+        right: 10px;
     }
 
     &#pop3 {
-        top: 50%;
-        right: 0;
+        bottom: 50%;
+        right: 10px;
     }
 
     &#pop4 {
         bottom: 0;
-        right: 0;
+        right: 10px;
     }
 
     &#pop5 {
         bottom: 0;
-        right: 50%;
+        left: 50%;
     }
 
     &#pop6 {
@@ -183,8 +189,9 @@ body>div {
         bottom: 50%;
         left: 0;
     }
+
     &#popcenter {
         left: calc(50% - 8px);
-        top: calc(50% + 8px);
+        bottom: calc(50% + 8px);
     }
 }
